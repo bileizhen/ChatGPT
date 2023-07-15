@@ -16,8 +16,8 @@ print("  | |_) | | (_| | (_) \ V  V /| | | |")
 print("  |_.__/|_|\__,_|\___/ \_/\_/ |_| |_|")
 print("")
 print("=======================================")
-print("  bidown  v2.0           by bileizhen")
-print("请选择功能：")
+print("  bidown  v2.2           by bileizhen")
+print("请选择功能")
 print(" [1]  下载")
 print(" [2]  作者")
 print(" [3]  更新")
@@ -26,8 +26,8 @@ print("══════════")
 choice = input("选择功能：")
 
 if choice == "1":
-    # 下载功能代码
-    url = input("下载链接：")
+    print("▣━━━━下载━━━━▣")
+    url = input("❯❯❯下载链接：")
     filename = os.path.basename(url)
     response = requests.get(url, stream=True)
 
@@ -48,14 +48,14 @@ if choice == "1":
         print("文件保存为：", filename)
 
 elif choice == "2":
-    # 显示作者信息功能代码
+    print("▣━━━━作者━━━━▣")
     print("作者：bileizhen")
     print("QQ：3140014249")
     print("版本：v0.1")
     print("Q群：698699383")
 
 elif choice == "3":
-        # 更新脚本功能代码
+        print("▣━━━━更新━━━━▣")
         url = "https://raw.githubusercontent.com/bileizhen/bidown/main/down.py"
         response = requests.get(url)
         new_script = response.text
@@ -63,7 +63,7 @@ elif choice == "3":
         with open(__file__, 'w') as file:
             file.write(new_script)
 
-        print("脚本已更新，请重启脚本以更新！")
+        print("脚本已更新，重启脚本以更新！")
         time.sleep(1)
         sys.exit()
 
