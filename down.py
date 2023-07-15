@@ -1,5 +1,6 @@
 import os
 import sys
+import time
 import requests
 from tqdm import tqdm
 
@@ -11,7 +12,7 @@ print("  | |_) | |/ / (_| | (_) \ V  V /| | | |")
 print("  |_.__/|_/___\__,_|\___/ \_/\_/ |_| |_|")
 print("")
 print("==========================================")
-print("  bidown  v1.0              by bileizhen")
+print("  bidown  v0.1              by bileizhen")
 print("请选择功能：")
 print(" [1]  下载")
 print(" [2]  作者")
