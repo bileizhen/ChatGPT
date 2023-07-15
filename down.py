@@ -1,4 +1,5 @@
 import os
+import sys
 import requests
 from tqdm import tqdm
 
@@ -16,7 +17,7 @@ print(" [1]  下载")
 print(" [2]  作者")
 print(" [3]  更新")
 print(" [4]  退出")
-print("══════")
+print("══════════")
 choice = input("选择功能：")
 
 if choice == "1":
