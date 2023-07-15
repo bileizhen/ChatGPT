@@ -20,12 +20,12 @@ print(" [3]  更新")
 print(" [4]  退出")
 print("══════════")
 print("┌─[bidown]─[作者：bileizhen]")
-choice = input("└──╼ ❯❯❯选择功能：")
+choice = input("└──╼ ❯❯❯ 选择功能：")
 
 if choice == "1":
     print("▣━━━━下载━━━━▣")
     print("┌─[bidown]─[作者：bileizhen]")
-    url = input("└──╼ ❯❯❯下载链接：")
+    url = input("└──╼ ❯❯❯ 下载链接：")
     filename = os.path.basename(url)
     response = requests.get(url, stream=True)
 
