@@ -12,7 +12,7 @@ print("  | |_) | |/ / (_| | (_) \ V  V /| | | |")
 print("  |_.__/|_/___\__,_|\___/ \_/\_/ |_| |_|")
 print("")
 print("==========================================")
-print("  bidown  v0.1              by bileizhen")
+print("  bidown  v1.0              by bileizhen")
 print("请选择功能：")
 print(" [1]  下载")
 print(" [2]  作者")
@@ -60,7 +60,7 @@ elif choice == "3":
             file.write(new_script)
 
         print("脚本已更新，请重启脚本以更新！")
-        time.sleep(3)
+        time.sleep(1)
         sys.exit()
 
 elif choice == "4":
@@ -68,4 +68,4 @@ elif choice == "4":
     
 else:
     print("无效的选择！")
-    time.sleep(3)
+    time.sleep(1)
