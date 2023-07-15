@@ -10,11 +10,13 @@ print("  | |_) | |/ / (_| | (_) \ V  V /| | | |")
 print("  |_.__/|_/___\__,_|\___/ \_/\_/ |_| |_|")
 print("")
 print("==========================================")
-print("  bidown  v0.1              by bileizhen")
+print("  bidown  v1.0              by bileizhen")
 print("请选择功能：")
 print(" [1]  下载")
 print(" [2]  作者")
-print("══════)
+print(" [3]  更新")
+print(" [4]  退出")
+print("══════")
 choice = input("选择功能：")
 
 if choice == "1":
@@ -48,13 +50,19 @@ elif choice == "2":
 
 elif choice == "3":
         # 更新脚本功能代码
-        print("正在更新脚本...")
-        os.system('git pull')
-        print("脚本已更新！")
+        url = "https://raw.githubusercontent.com/bileizhen/bidown/main/down.py"
+        response = requests.get(url)
+        new_script = response.text
+
+        with open(__file__, 'w') as file:
+            file.write(new_script)
+
+        print("脚本已更新，请重启脚本以更新！")
         time.sleep(3)
+        sys.exit()
 
 elif choice == "4":
-        break
+        sys.exit()
     
 else:
     print("无效的选择！")
