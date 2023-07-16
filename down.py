@@ -53,32 +53,39 @@ elif choice == "2":
     print("Q群：698699383")
 
 elif choice == "3":
-elif choice == "3":
     print("▣━━━━更新━━━━▣")
     print("请选择更新源")
     print(" [1] GitHub")
     print(" [2] Gitee")
     print("┌─[bidown]─[选择选项]")
-    update_choice = input("└──╼ ❯❯❯ ")
+    update_choice = input("└──╼ ❯❯❯ ");
 
     if update_choice == "1":
         github_url = "https://raw.githubusercontent.com/bileizhen/bidown/main/down.py"
-        update_script(github_url)
-    elif update_choice == "2":
-        gitee_url = "https://gitee.com/bileizhen1672/bidown/blob/main/down.py"
-        update_script(gitee_url)
-    else:
-        github_url = "https://raw.githubusercontent.com/bileizhen/bidown/main/down.py"
-        update_script(github_url)
-
-    def update_script(url):
-        response = requests.get(url)
+        response = requests.get(github_url)
         new_script = response.text
 
         with open(__file__, 'w') as file:
             file.write(new_script)
 
         print("脚本已更新，重启脚本以更新！")
+        time.sleep(1)
+        sys.exit()
+
+    elif update_choice == "2":
+        gitee_url = "https://gitee.com/bileizhen1672/bidown/raw/main/down.py"
+        response = requests.get(gitee_url)
+        new_script = response.text
+
+        with open(__file__, 'w') as file:
+            file.write(new_script)
+
+        print("脚本已更新，重启脚本以更新！")
+        time.sleep(1)
+        sys.exit()
+
+    else:
+        print("无效的选择！")
         time.sleep(1)
         sys.exit()
 
