@@ -53,6 +53,7 @@ elif choice == "2":
     print("Q群：698699383")
 
 elif choice == "3":
+elif choice == "3":
     print("▣━━━━更新━━━━▣")
     print("请选择更新源")
     print(" [1] GitHub")
@@ -70,16 +71,16 @@ elif choice == "3":
         github_url = "https://raw.githubusercontent.com/bileizhen/bidown/main/down.py"
         update_script(github_url)
 
-def update_script(url):
-    response = requests.get(url)
-    new_script = response.text
+    def update_script(url):
+        response = requests.get(url)
+        new_script = response.text
 
-    with open(__file__, 'w') as file:
-        file.write(new_script)
+        with open(__file__, 'w') as file:
+            file.write(new_script)
 
-    print("脚本已更新，重启脚本以更新！")
-    time.sleep(1)
-    sys.exit()
+        print("脚本已更新，重启脚本以更新！")
+        time.sleep(1)
+        sys.exit()
 
 elif choice == "4":
     sys.exit()
