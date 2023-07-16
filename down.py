@@ -57,7 +57,7 @@ elif choice == "3":
         print("请选择更新源")
         print(" [1] GitHub")
         print(" [2] Gitee")
-        print ("┌─[bidown]─[选择选项]
+        print ("┌─[bidown]─[选择选项]")
         update_choice = input("└──╼ ❯❯❯ ")
 
         if update_choice == "1":
