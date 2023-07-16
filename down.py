@@ -61,7 +61,7 @@ elif choice == "3":
     update_choice = input("└──╼ ❯❯❯ ");
 
     if update_choice == "1":
-        github_url = "https://github.com/bileizhen/bidown/down.py"
+        github_url = "https://raw.githubusercontent.com/bileizhen/bidown/main/down.py"
         response = requests.get(github_url)
         new_script = response.text
 
