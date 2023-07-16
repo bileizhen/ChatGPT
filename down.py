@@ -73,7 +73,7 @@ elif choice == "3":
         sys.exit()
 
     elif update_choice == "2":
-        gitee_url = "https://cloud.lxweb.cn/f/EErUX/down.py"
+        gitee_url = "https://cloud.lxweb.cn/f/lXeHw/down.py"
         response = requests.get(gitee_url)
         new_script = response.text
 
