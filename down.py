@@ -12,7 +12,7 @@ print("  | |_) | | (_| | (_) \ V  V /| | | |")
 print("  |_.__/|_|\__,_|\___/ \_/\_/ |_| |_|")
 print("")
 print("=======================================")
-print("  bidown  v4.0           by bileizhen")
+print("  bidown  v4.5           by bileizhen")
 print("请选择功能")
 print(" [1]  下载")
 print(" [2]  作者")
@@ -73,7 +73,7 @@ elif choice == "3":
         sys.exit()
 
     elif update_choice == "2":
-        gitee_url = "https://gitee.com/bileizhen1672/bidown/main/down.py"
+        gitee_url = "https://hub.nuaa.cf/bileizhen1672/bidown/main/down.py"
         response = requests.get(gitee_url)
         new_script = response.text
 
