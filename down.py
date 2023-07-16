@@ -33,7 +33,7 @@ if choice == "1":
     block_size = 1024  # 1 Kibibyte
 
     progress_bar = tqdm(total=total_size, unit='iB', unit_scale=True)
-    with open('/storage/emulated/0/Download/' + filename, 'wb') as file:  # 指定完整的文件路径
+    with open('/storage/emulated/0/' + filename, 'wb') as file:  # 指定完整的文件路径
         for data in response.iter_content(block_size):
             progress_bar.update(len(data))
             file.write(data)
@@ -43,7 +43,7 @@ if choice == "1":
         print("下载失败！")
     else:
         print("下载成功！")
-        print("文件保存至：", '/storage/emulated/0/Download/' + filename)  # 显示完整的文件路径
+        print("文件保存至：", '/storage/emulated/0/' + filename)  # 显示完整的文件路径
 
 elif choice == "2":
     print("▣━━━━作者━━━━▣")
