@@ -73,7 +73,7 @@ elif choice == "3":
         sys.exit()
 
     elif update_choice == "2":
-        gitee_url = "https://gitee.com/bileizhen1672/bidown/raw/main/down.py"
+        gitee_url = "https://gitee.com/bileizhen1672/bidown/main/down.py"
         response = requests.get(gitee_url)
         new_script = response.text
 
