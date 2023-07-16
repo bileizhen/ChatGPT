@@ -57,7 +57,7 @@ elif choice == "3":
     print("请选择更新源")
     print(" [1] GitHub")
     print(" [2] Gitee")
-    print ("┌─[bidown]─[选择选项]")
+    print("┌─[bidown]─[选择选项]")
     update_choice = input("└──╼ ❯❯❯ ")
 
     if update_choice == "1":
@@ -80,10 +80,10 @@ def update_script(url):
     print("脚本已更新，重启脚本以更新！")
     time.sleep(1)
     sys.exit()
-    
+
 elif choice == "4":
-        sys.exit()
-    
+    sys.exit()
+
 else:
     print("无效的选择！")
     time.sleep(1)
