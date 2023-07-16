@@ -64,10 +64,11 @@ elif choice == "3":
             github_url = "https://raw.githubusercontent.com/bileizhen/bidown/main/down.py"
             update_script(github_url)
         elif update_choice == "2":
-            gitee_url = "https://gitee.com/bileizhen/bidown/raw/main/down.py"
+            gitee_url = "https://gitee.com/bileizhen1672/bidown/blob/main/down.py"
             update_script(gitee_url)
         else:
-            print("无效的选项")
+            github_url = "https://raw.githubusercontent.com/bileizhen/bidown/main/down.py"
+            update_script(github_url)
 
     def update_script(url):
         response = requests.get(url)
